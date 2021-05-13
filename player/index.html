@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Player</title>
     <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style type="text/css">
         .player-container {
             width: 796px;
@@ -37,6 +39,10 @@
             height: 35px;
             width: 35px;
         }
+
+        .player-videotimer {
+            font-family: 'Roboto', sans-serif;
+        }
     </style>
 </head>
 
@@ -51,6 +57,11 @@
                 <button class="js-volume-button player-button"><i class="fa fa-volume-off"
                         aria-hidden="true"></i></button>
             </div>
+            <div class="player-buttons-container player-videotimer" style="color: white;">
+                <span class="js-current-time"></span>
+                —
+                <span class="js-duration"></span>
+              </div>
             <div class="player-freespace-between-button"></div>
             <div class="player-buttons-container">
                 <button class="js-fullscreen-button player-button"><i class="fa fa-arrows-alt"
