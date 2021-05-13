@@ -16,9 +16,16 @@
             flex-direction: column;
         }
 
-        .player-screen,
-        .player-freespace-between-button {
+        .player-screen {
             flex-grow: 1;
+        }
+
+        .player-duration-container {
+            flex-grow: 1;
+            display: flex;
+            padding: 5px;
+            padding-left: 1px;
+            padding-right: 0px;
         }
 
         .player-buttons-container {
@@ -42,6 +49,8 @@
 
         .player-videotimer {
             font-family: 'Roboto', sans-serif;
+            color: white;
+            display: flex;
         }
     </style>
 </head>
@@ -57,12 +66,13 @@
                 <button class="js-volume-button player-button"><i class="fa fa-volume-off"
                         aria-hidden="true"></i></button>
             </div>
-            <div class="player-buttons-container player-videotimer" style="color: white;">
-                <span class="js-current-time"></span>
-                —
-                <span class="js-duration"></span>
-              </div>
-            <div class="player-freespace-between-button"></div>
+            <div class="player-duration-container">
+                <div class="player-duration-container">
+                    <div class="js-current-time player-videotimer"></div>
+                    <div class="player-duration-container"></div>
+                    <div class="js-duration player-videotimer"></div>
+                </div>
+            </div>
             <div class="player-buttons-container">
                 <button class="js-fullscreen-button player-button"><i class="fa fa-arrows-alt"
                         aria-hidden="true"></i></button>
